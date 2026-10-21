@@ -1,0 +1,27 @@
+BIO ROBLOX HALLOWEEN — GITHUB PAGES
+
+1. Descomprime el archivo ZIP.
+2. Sube el CONTENIDO de esta carpeta a la raíz de tu repositorio de GitHub:
+   index.html
+   halloween-world.png
+   .nojekyll
+   LEEME.txt
+   No subas solamente el ZIP ni metas index.html dentro de otra carpeta.
+3. En el repositorio abre Settings > Pages.
+4. En Source elige Deploy from a branch.
+5. Elige la rama main y la carpeta / (root), y pulsa Save.
+   Si tu rama principal tiene otro nombre, elige esa rama.
+6. Cuando termine la publicación, pulsa Visit site.
+   Abre la dirección de GitHub Pages; la vista del archivo dentro del
+   repositorio muestra el código y no equivale a la web publicada.
+
+El archivo .nojekyll puede quedar oculto en el explorador de archivos.
+La página usa HTML y CSS. No requiere contraseña, inicio de sesión ni JavaScript.
+La imagen debe permanecer junto a index.html para que aparezca el fondo.
+
+BOTONES
+Arriba (naranja): https://evolumaxtiva.tecnologiaempresarial.top/free-robux-codes-explained/
+Abajo (violeta): https://zielofaire.guiaswarezone.top/index.php/2026/09/05/free-robux/
+
+Documentación oficial:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site

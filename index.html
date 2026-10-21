@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#160b27">
+  <meta name="description" content="Roblox Guide se viste de Halloween. Una bio épica con calabazas, aventuras y dos accesos al evento.">
+  <meta property="og:title" content="Roblox Guide · Halloween">
+  <meta property="og:description" content="La noche más épica de Roblox empieza aquí. 🎃">
+  <title>Roblox Guide · Halloween</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎃%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: dark; --orange: #ffad43; --ink: #140923; }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: #090512; }
+    body { margin: 0; color: #fff; font-family: ui-rounded, 'Arial Rounded MT Bold', 'Trebuchet MS', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    button, a { font: inherit; -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    .ambient { position: fixed; inset: -40px; z-index: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 0%, #7f322e 0%, #211036 40%, #090512 76%); }
+    .world { position: relative; z-index: 1; isolation: isolate; width: min(100%, 540px); min-height: 780px; min-height: max(100vh, 780px); min-height: max(100svh, 780px); margin: auto; overflow: hidden; background: #160b27; box-shadow: 0 0 140px #62235635; }
+    .hero-art { display: block; position: absolute; top: 0; left: 0; width: 100%; height: auto; z-index: 0; pointer-events: none; -webkit-mask-image: linear-gradient(#000 72%, transparent 100%); mask-image: linear-gradient(#000 72%, transparent 100%); }
+    .world::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, #09041428 0%, transparent 33%, #13082118 44%, #12082255 66%, #0b0616a6 100%); }
+    .masthead { position: absolute; z-index: 3; top: max(20px, env(safe-area-inset-top)); left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 9px; font-size: 12px; font-weight: 900; letter-spacing: .2em; text-shadow: 0 2px 14px #130313; }
+    .brand-mark { width: 15px; height: 15px; background: #ffdbac; transform: rotate(-18deg); position: relative; filter: drop-shadow(0 0 6px #f28616); }
+    .brand-mark::after { content: ''; position: absolute; inset: 5px; background: #432020; }
+    .hero-space { height: clamp(282px, 80vw, 402px); }
+    main { position: relative; z-index: 3; padding: 0 23px max(28px, env(safe-area-inset-bottom)); text-align: center; }
+    .season { display: inline-flex; align-items: center; gap: 8px; color: #ffbc66; font-size: 10px; font-weight: 900; letter-spacing: .23em; text-transform: uppercase; text-shadow: 0 1px 12px #120519; }
+    .season::before, .season::after { content: ''; width: 24px; height: 1px; background: linear-gradient(90deg, transparent, #ee9b4a); }
+    .season::after { transform: rotate(180deg); }
+    h1 { font-size: clamp(29px, 8.4vw, 44px); font-weight: 900; letter-spacing: -.04em; line-height: 1.14; margin: 12px 0 10px; color: #ffd092; text-shadow: 0 3px 0 #441236, 0 0 34px #ff78085e; }
+    .description { max-width: 340px; margin: 0 auto; font-family: 'Trebuchet MS', system-ui, sans-serif; color: #f1e6fa; font-size: clamp(14px, 3.8vw, 17px); line-height: 1.6; text-shadow: 0 2px 10px #100618; }
+    .description strong { color: white; font-weight: 700; }
+    .links { display: grid; gap: 23px; margin: 28px 0 0; }
+    .event-link { position: relative; display: flex; align-items: center; gap: 13px; width: 100%; min-height: 93px; padding: 15px 17px 15px 14px; border: 2px solid #ffe4b8; border-radius: 24px; text-decoration: none; color: #3d1309; background: linear-gradient(165deg, #ffda8c 0%, #ffb441 37%, #ff8622 100%); box-shadow: inset 0 2px 0 #fff9, inset 0 -2px 0 #e36b0fa3, 0 7px 0 #8e3a11, 0 12px 30px #ff8c193d; transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; text-align: left; }
+    .event-link::before { content: ''; position: absolute; inset: 5px; border: 1px solid #fff4; border-radius: 18px; pointer-events: none; }
+    .event-link:hover { transform: translateY(-3px); filter: brightness(1.07); box-shadow: inset 0 2px 0 #fff9, 0 10px 0 #8e3a11, 0 16px 38px #ff8c1950; }
+    .event-link:active { transform: translateY(5px); box-shadow: inset 0 2px 0 #fff5, 0 2px 0 #8e3a11, 0 7px 20px #ff8c193d; }
+    .event-link:focus-visible { outline: 3px solid white; outline-offset: 6px; }
+    .event-link.purple { background: linear-gradient(165deg, #c69bff 0%, #a566ef 38%, #7940db 100%); border-color: #e0c4ff; color: white; box-shadow: inset 0 2px 0 #fff6, inset 0 -2px 0 #4d198ba3, 0 7px 0 #3c1b73, 0 12px 30px #a159ed49; }
+    .event-link.purple:hover { box-shadow: inset 0 2px 0 #fff9, 0 10px 0 #3c1b73, 0 16px 38px #a159ed66; }
+    .event-link.purple:active { box-shadow: inset 0 2px 0 #fff5, 0 2px 0 #3c1b73, 0 7px 20px #a159ed49; }
+    .pumpkin { position: relative; flex: 0 0 53px; width: 53px; height: 53px; display: grid; place-items: center; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif; font-size: 43px; filter: drop-shadow(0 4px 3px #7d261666); transform: rotate(-9deg); }
+    .purple .pumpkin { transform: rotate(8deg); filter: drop-shadow(0 4px 3px #40105b66); }
+    .button-copy { min-width: 0; flex: 1; }
+    .button-title { display: block; font-size: clamp(17px, 4.45vw, 23px); font-weight: 900; letter-spacing: -.035em; line-height: 1.17; }
+    .button-note { display: block; margin-top: 5px; font-family: 'Trebuchet MS', system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .01em; opacity: .8; }
+    .arrow { flex: 0 0 16px; width: 16px; height: 16px; stroke: currentColor; stroke-width: 2.8; fill: none; opacity: .8; }
+    .footer { margin-top: 31px; }
+    .footer-pumpkin { display: block; font-size: 19px; line-height: 1; margin-bottom: 9px; filter: drop-shadow(0 0 12px #ff8b47); }
+    .footer-line { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #d1b4de; margin: 0; }
+    .fan-note { font-family: 'Trebuchet MS', system-ui, sans-serif; font-size: 10px; color: #b09ebd; margin: 9px 0 0; line-height: 1.5; }
+    .embers { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+    .spark { position: absolute; width: 3px; height: 3px; z-index: 0; border-radius: 50%; background: #ffae58; box-shadow: 0 0 8px #ff930a, 0 0 16px #ff721a; animation: drift 7s ease-in-out infinite; pointer-events: none; }
+    .spark:nth-child(1) { top: 30%; left: 8%; animation-delay: -2s; }
+    .spark:nth-child(2) { top: 52%; right: 5%; animation-delay: -4s; }
+    .spark:nth-child(3) { top: 82%; left: 14%; animation-delay: -6s; }
+    .spark:nth-child(4) { top: 74%; right: 13%; animation-delay: -1s; }
+    .spark:nth-child(5) { top: 46%; left: 20%; animation-delay: -3s; }
+    @keyframes drift { 0%, 100% { transform: translate(0, 0); opacity: .2; } 50% { transform: translate(8px, -25px); opacity: 1; } }
+    @media (min-width: 700px) { body { padding: 24px 0; } .world { min-height: 890px; border-radius: 32px; border: 1px solid #79447845; } main { padding-inline: 34px; } .hero-space { height: 402px; } .masthead { top: 24px; } .links { margin-top: 28px; } }
+    @media (max-width: 359px) { main { padding-inline: 17px; } .event-link { gap: 9px; padding-inline: 12px; } .pumpkin { flex-basis: 43px; width: 43px; font-size: 36px; } .button-title { font-size: 16px; } .button-note { font-size: 10px; } .arrow { flex-basis: 12px; width: 12px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="world">
+    <img class="hero-art" src="./halloween-world.png" width="1024" height="1536" alt="Personaje estilo Roblox con auriculares sosteniendo una calabaza iluminada, frente a una luna naranja y un castillo de Halloween." decoding="async" fetchpriority="high">
+    <div class="embers" aria-hidden="true"><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i></div>
+    <div class="masthead"><span class="brand-mark" aria-hidden="true"></span><span>ROBLOX GUIDE</span></div>
+    <div class="hero-space" aria-hidden="true"></div>
+    <main>
+      <header>
+        <span class="season">Especial Halloween</span>
+        <h1>@RobloxGuide</h1>
+        <p class="description">Guías, aventuras y una noche de<br><strong>Halloween épica en Roblox.</strong></p>
+      </header>
+      <nav class="links" aria-label="Eventos de Halloween">
+        <a class="event-link orange" href="https://evolumaxtiva.tecnologiaempresarial.top/free-robux-codes-explained/" aria-label="🎃 Evento de Halloween, primer enlace">
+          <span class="pumpkin" aria-hidden="true">🎃</span>
+          <span class="button-copy"><span class="button-title">Evento de Halloween</span><span class="button-note">Que empiece la aventura</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="event-link purple" href="https://zielofaire.guiaswarezone.top/index.php/2026/09/05/free-robux/" aria-label="🎃 Evento de Halloween, segundo enlace">
+          <span class="pumpkin" aria-hidden="true">🎃</span>
+          <span class="button-copy"><span class="button-title">Evento de Halloween</span><span class="button-note">Que empiece la aventura</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </nav>
+      <footer class="footer">
+        <span class="footer-pumpkin" aria-hidden="true">🎃</span>
+        <p class="footer-line">Una noche. Mil aventuras.</p>
+        <p class="fan-note">Página de fans · No afiliada a Roblox.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
